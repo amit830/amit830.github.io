@@ -227,7 +227,11 @@
     .lines .line,
     .lines .line1,
     .lines .line2{
-      width: 0px;
+      display: none;
+    }
+    
+    .body{
+      overflow-x: hidden;
     }
   }  
 
@@ -243,6 +247,7 @@
         width: 20%;
         height:fit-content;
         box-shadow: rgba(0, 0, 0, 0.63);
+        overflow-x: hidden;
     }
   }
 
