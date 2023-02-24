@@ -148,6 +148,11 @@
   /* Mobile Responsiveness */
   @media screen and (max-width: 500px) {
     
+    .body{
+      width: auto;
+      overflow-wrap: hidden;
+    }
+    
     .wrapper .top_navbar .top_menu  
     { 
     width: calc(90% - 70px)!important; 
@@ -160,7 +165,9 @@
       left: 0% !important;
     }
     .wrapper .top_navbar .hamburger {
-      display: none;
+      display: flex;
+      width: 10px !important;
+      margin: -6px -13px !important;
     }
     .login,
     .logo{
@@ -220,7 +227,7 @@
     .lines .line,
     .lines .line1,
     .lines .line2{
-      display: none !important;
+      width: 0px;
     }
   }  
 
@@ -267,10 +274,14 @@
 
       .wrapper .top_navbar .top_menu  
       { 
-      width: calc(65.5% - 70px)!important; 
-      height: fit-content;
+      width: calc(69.5% - 70px) !important; 
+      height: fit-content !important;
        } 
       
+       
+      .wrapper .top_navbar {
+       width: calc(65.5% - 20px);
+      }
        .single-footer-widget pl-5{
         padding-left: 1rem !important;
        }
