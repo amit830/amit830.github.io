@@ -240,7 +240,7 @@
   }
 
   /* Desktop Responsiveness */
-  @media screen and (max-width: 1300px) {
+  @media screen and (max-width: 1300px) and (min-width: 1301px) {
     .sidebar,
     .slider1 img,
     .carousel-inner .d-block,
