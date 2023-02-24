@@ -61,12 +61,13 @@
   
   /* Make the image responsive */
   .slider1 img {
-    position: relative;
+    position: flex;
     width: 1620px;
     height: 800px;
     aspect-ratio: 2/1;
     background-size: cover;
   }
+  
   
   /* Style the button and place it in the middle of the slider/image */
   .slider1 .btn {
@@ -142,4 +143,97 @@
     height: 800px;
     top: 0; left: 0; bottom: 0; right: 0;
     box-shadow: inset 0px 0px 150px black;
+  }
+
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 500px) {
+    
+    .wrapper .top_navbar .top_menu  
+    { 
+    width: calc(90% - 70px)!important; 
+    height: fit-content;
+    margin-left: -1%;
+     } 
+    .wrapper .sidebar
+    {
+      width: 40px !important;
+      left: 0% !important;
+    }
+    .wrapper .top_navbar .hamburger {
+      display: none;
+    }
+    .login,
+    .logo{
+      font-size: 10px !important;
+    }
+
+    .title{
+      display: none !important;
+      align-content: center !important;
+    }
+    .wrapper .top_navbar {
+    width: calc(32% - 20px) !important;
+    }
+    
+    .wrapper .top_menu ul li a{
+    margin: 0 2px;
+    width: 19px;
+    height: 19px;
+    line-height: 20px;
+    }
+    .sidebar ul{
+    padding-inline-start: 18px;
+    }
+    .slider img,
+    .slider1 img,
+    .footer-area,
+    .d-block
+    {
+      margin-left: -227px !important;
+    }
+
+    .carousel-inner{
+      margin-left: 0px !important;
+    }
+
+    .slider img{
+        margin-top: 165px;
+    }
+    .slider1{
+      height: 127px;
+    }
+    
+    .slider1 .btn{
+      margin-left: -65px;
+      width: 543px;
+    }
+    
+    .slider .btn{
+      margin-left: -65px;
+    }
+
+    
+    .col-lg-4 .footer-area{
+      width: 357px;
+    }
+
+    .lines .line,
+    .lines .line1,
+    .lines .line2{
+      width: 0px;
+    }
+  }  
+
+  @media screen and (max-width: 500px) {
+  
+    .sidebar,
+    .slider1 img,
+    .carousel-inner .d-block,
+    .carousel-inner .d-block w-100,
+    .slider .btn,
+    .slider1 .btn,
+    .slider img {
+        width: 20%;
+        height:fit-content;
+    }
   }
