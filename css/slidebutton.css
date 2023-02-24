@@ -220,7 +220,7 @@
     .lines .line,
     .lines .line1,
     .lines .line2{
-      width: 0px;
+      display: none;
     }
   }  
 
