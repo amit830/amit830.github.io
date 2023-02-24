@@ -53,7 +53,9 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="./navbar.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
   <style>
+    
     body {
       font-family: 'Quicksand', sans-serif;
       height: auto;
@@ -77,7 +79,6 @@
     }
 
     .container-cp {
-      text-align: center;
       margin-top: 40px;
       margin-bottom: 40px;
     }
@@ -333,18 +334,17 @@
     .wrapper .sidebar ul li a.active {
       background: #4360b5;
       color: #fff;
-      margin-left: -18%;
+      margin-left: -0.5%;
     }
 
     .wrapper .sidebar ul li a:hover:before,
     .wrapper .sidebar ul li a.active:before {
       display: block;
-      margin-left: -18%;
+      margin-left: -0.5%;
     }
 
     .wrapper .main_container {
-      max-width: 100%;
-      min-width: 200px;
+      width: calc(100%-70px);
       margin-top: 70px;
       margin-left: 200px;
       padding: 15px;
@@ -360,7 +360,7 @@
     }
 
     .wrapper.collapse .sidebar {
-      width: 70px;
+      width: 73px;
     }
 
     .wrapper.collapse .sidebar ul li a {
@@ -376,8 +376,7 @@
     }
 
     .wrapper.collapse .main_container {
-      max-width:100%;
-      min-width:70px;
+      width:calc (100% - 70px);
       margin-left: 70px;
     }
 
@@ -441,7 +440,7 @@ h3{
     overflow: hidden;
     width: 1620px;
     height: auto;
-    margin-top: 40px;
+    margin-top: 220px;
     margin-bottom: -40px;
 }
 .foot-pd {
@@ -563,7 +562,7 @@ a:visited
         </div>
 
         <ul>
-          <li>Sign Up/Sign In</li>
+          <li class="login">Sign Up/Sign In</li>
           <li><a href="signin-up.html">
               <i class="fas fa-user"></i>
             </a></li>
@@ -626,7 +625,7 @@ a:visited
       <span id="carouselExampleControls" class="carousel-slide-move" data-ride="carousel">
         <span class="carousel-inner">
           <span class="carousel-item active">
-            <img class="d-block w-100" src="images/image1.jpg" alt="First slide">
+            <img class="d-block" src="images/image1.jpg" alt="First slide">
           </span>
           <span class="carousel-item">
             <img class="d-block" src="images/image2.jpg" alt="Second slide">
@@ -638,18 +637,13 @@ a:visited
             <img class="d-block" src="images/vision.jpeg" alt="Fourth slide">
           </span>
         </span>
-        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </span>
-      </span>
+        
       <!--end of slides-->*/
-
+      <script>
+      $(".hamburger").click(function(){
+        $(".wrapper").toggleClass("collapse");
+     });
+     </script>
 
       <div class="elfsight-app-9dbb0560-e954-4e18-82f9-5fb6eeef8428"></div>
       <span class="container-cp">
