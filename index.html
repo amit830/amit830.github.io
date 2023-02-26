@@ -6,7 +6,7 @@
   <link rel="icon" type="image/x-png" href="./img/logo.png" height="48px" width="48px">
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -60,7 +60,7 @@
       font-family: 'Quicksand', sans-serif;
       height: auto;
       width: 100%;
-      overflow-x: hidden;
+      display: flex;
       position: relative;
     }
 
@@ -74,7 +74,7 @@
     }
 
     .container {
-      display: grid;
+      display: flex;
       flex-wrap: wrap;
     }
 
@@ -252,11 +252,17 @@
     .wrapper .top_navbar .top_menu ul {
       z-index: 1;
       display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
     }
 
     .wrapper .top_navbar .top_menu ul li a {
       z-index: 0;
-      display: block;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      justify-content: space-around;
       margin: 0 10px;
       width: 35px;
       height: 35px;
@@ -298,6 +304,7 @@
 
     .wrapper .sidebar ul li a {
       display: flex;
+      flex-wrap: wrap;
       padding: 20px;
       color: #fff;
       position: relative;
@@ -339,7 +346,7 @@
 
     .wrapper .sidebar ul li a:hover:before,
     .wrapper .sidebar ul li a.active:before {
-      display: block;
+      display: inline-block;
       margin-left: -0.5%;
     }
 
@@ -384,11 +391,12 @@
       width: 1620px;
       height: 800px;
       object-fit: contain;
-      display: inline-block;
+      display: flex;
       margin-top: 3.5%;
       margin-bottom: 10%;
       position: absolute;
       flex-wrap: wrap;
+      flex-shrink: 1;
 
 
     }
@@ -400,6 +408,8 @@
       height: auto;
       position: relative;
       left: 250px;
+      display: flexbox;
+      flex-shrink: 1;
     }
 
     a[role="button"] {
@@ -433,7 +443,7 @@ h3{
 }
 .footer-area {
     background-color: #060f1e;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     z-index: 2;
@@ -441,7 +451,7 @@ h3{
     width: 1620px;
     height: auto;
     margin-top: 220px;
-    margin-bottom: -40px;
+    bottom: 0px;
 }
 .foot-pd {
     padding-top: 70px;
@@ -456,7 +466,8 @@ section {
 }
 
 ul {
-    display: block;
+    display: flexbox;
+    flex-wrap: wrap;
     list-style-type: disc;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -576,7 +587,6 @@ a:visited
 
       </div>
     </div>
-
     <div class="sidebar">
       <ul>
         <li><a href="#" class="active">
@@ -661,30 +671,30 @@ a:visited
             <div class="slider1">
               <img
                 src="https://149880433.v2.pressablecdn.com/wp-content/uploads/2021/09/hub-nutritionist-meeting-with-patient-1200x628-1.jpg"
-                alt="Nutritionist">
+                alt="Nutritionist" id="img1">
               <br><a
                 href="https://www.practo.com/jaipur/therapist/archana-jain-1-dietitian-nutritionist?practice_id=844572&specialization=Dietitian/Nutritionist&referrer=doctor_listing"
-                target="_blank"><button class="btn">Get Balanced Diet</button></a>
+                target="_blank"><button class="btn" id="btn1">Get Balanced Diet</button></a>
             </div>
 
             <div class="slider1">
-              <img src="https://www.apa.org/images/article-understanding_tcm7-285067.jpg" alt="Psychotherapist">
+              <img src="https://www.apa.org/images/article-understanding_tcm7-285067.jpg" alt="Psychotherapist" id="img2">
               <br><a
                 href="https://www.practo.com/jaipur/therapist/nimisha-gupta-psychologist-1?practice_id=1375769&specialization=Psychologist&referrer=doctor_listing"
-                target="_blank"><button class="btn">Bad Mental Health! Consult Now</button></a>
+                target="_blank"><button class="btn" id="btn2">Bad Mental Health! Consult Now</button></a>
             </div>
 
 
             <div class="slider1">
-              <img src="https://medlineplus.gov/images/Talkingwithyourdoctor_share.jpg" alt="Doctors">
-              <br><a href="https://www.apexhospitals.com/apex-doctors" target="_blank"><button class="btn">Consult with
+              <img src="https://medlineplus.gov/images/Talkingwithyourdoctor_share.jpg" alt="Doctors" id="img3">
+              <br><a href="https://www.apexhospitals.com/apex-doctors" target="_blank"><button class="btn" id="btn3">Consult with
                   our Experts</button></a>
             </div>
 
             <div class="slider1">
-              <img src="https://images.indianexpress.com/2022/04/GettyImages-yoga-1200.jpg" alt="Yoga Classes">
+              <img src="https://images.indianexpress.com/2022/04/GettyImages-yoga-1200.jpg" alt="Yoga Classes" id="img4">
               <br><a href="https://www.healthline.com/nutrition/12-benefits-of-meditation" target="_blank"><button
-                  class="btn">Benefits of Meditation</button></a>
+                  class="btn" id="btn4">Benefits of Meditation</button></a>
             </div>
 
             <section class="footer-area foot-pd">
