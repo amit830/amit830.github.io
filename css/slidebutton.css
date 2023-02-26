@@ -1,3 +1,11 @@
+.col-lg-4{
+  position: relative;
+  top: 700px;
+  bottom: 40px;
+}
+ .d-block{
+  position: relative;
+}
 .slider {
     width: 1620px;
     display: block;
@@ -6,23 +14,52 @@
   
   /* Make the image responsive */
   .slider img {
-    position: block;
+    position: relative;
     max-width: 1620px;
     height: 800px;
     aspect-ratio: 2/1;
-    margin-top: 700px;
-    display: block;
+    
+    display: flex;
     flex-wrap: wrap;
+    flex-shrink: 1;
     object-fit: cover;
     overflow: hidden;
   }
-  
+  #img2{
+    top:88px;
+  }
+  #img3{
+    top: 120px;
+  }
+  #img4{
+    top: 190px;
+    bottom: 20px;
+  }
+
+  #btn1{
+    top: -17px;
+  }
+
+  #btn2{
+    top: 46px;
+  }
+
+  #btn3{
+    top: 95px;
+  }
+
+  #btn4{
+    top: 159px;
+  }
   /* Style the button and place it in the middle of the slider/image */
   .slider .btn {
-    margin-left: 810px;
-    position: block;
+    left: 810px;
+    top: -17px;
+    position: relative;
     flex-wrap: wrap;
+    display: flex;
     text-align: center;
+    justify-content: space-around;
     width: 1620px;
     overflow: hidden;
     transform: translate(-50%, -50%);
@@ -43,17 +80,17 @@
   .slider .btn:hover {
 
     background-color: rgba(0, 0, 0, 0.726);
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
-    position: block;
+    position: inline-block;
   }
   
   .slider1 {
-    display: block;
+    display: relative;
     width: 1620px;
     height: 800px;
-    margin-top: 200px;
+    top: 200px;
     flex-wrap: wrap;
     box-shadow: rgba(0, 0, 0, 0.726);
     border-color: rgba(0, 0, 0, 0.856);
@@ -61,18 +98,20 @@
   
   /* Make the image responsive */
   .slider1 img {
-    position: flex;
+    position: relative;
     width: 1620px;
     height: 800px;
     aspect-ratio: 2/1;
     background-size: cover;
+    display: flex;
+    align-content: stretch;
   }
   
-  
+ 
   /* Style the button and place it in the middle of the slider/image */
   .slider1 .btn {
-    margin-left: 810px;
-    position: block;
+    left: 810px;
+    position: relative;
     flex-wrap: wrap;
     text-align: center;
     width: 1620px;
@@ -95,64 +134,46 @@
   .slider1 .btn:hover {
 
     background-color: rgba(0, 0, 0, 0.726);
-    padding-top: 6%;
-    padding-bottom: 6%;
+    padding-top: 1%;
+    padding-bottom: 1%;
     text-align: center;
     position: block;
   }
 
-  .vignette-inset {
+  .carousel-inner{
     position: relative;
-    display: block;
-    background-image: url('../images/posts/css-effects/3/atx-rooftop.jpg');
-    background-size: cover;
-    width: 1620px;
-    height: 800px;
-    margin-top: 190%;
-  }
-  
-  .vignette-inset:after {
-    content: '';
-    position: absolute;
-    display: block;
-    background-image: url('../images/posts/css-effects/3/atx-rooftop.jpg');
-    background-size: cover;
-    width: 1620px;
-    height: 800px;
-    top: 0; left: 0; bottom: 0; right: 0;
-    box-shadow: inset 0px 0px 150px black;
+    left: 14px
   }
 
-  .vignette-inset1 {
-    position: relative;
-    display: block;
-    background-image: url('../images/posts/css-effects/3/atx-rooftop.jpg');
-    background-size: cover;
-    width: 1620px;
-    height: 800px;
-    margin-top: 190%;
-  }
-  
-  .vignette-inset1:after {
-    content: '';
-    position: absolute;
-    display: block;
-    background-image: url('../images/posts/css-effects/3/atx-rooftop.jpg');
-    background-size: cover;
-    width: 1620px;
-    height: 800px;
-    top: 0; left: 0; bottom: 0; right: 0;
-    box-shadow: inset 0px 0px 150px black;
-  }
+  .wrapper .sidebar ul li a.active{
+    margin-left: -38px !important;
+    padding-left: 30px;
+   }
 
+   .wrapper .sidebar ul li a:hover{
+    margin-left: -38px !important;
+    padding-left: 30px;
+    text-decoration: none;
+   }
   /* Mobile Responsiveness */
   @media screen and (max-width: 500px) {
-    
-    .body{
-      width: auto;
-      overflow-wrap: hidden;
+    .carousel-item .active
+    {
+      position: relative !important;
+      left: -410px !important;
+      overflow: visible !important;
+    }
+
+    .col-lg-4{
+      position: relative;
+      top: 147px;
+      bottom: 40px;
     }
     
+    #carouselExampleControls{
+      display: inline-block;
+    }
+
     .wrapper .top_navbar .top_menu  
     { 
     width: calc(90% - 70px)!important; 
@@ -196,27 +217,32 @@
     .footer-area,
     .d-block
     {
-      margin-left: -227px !important;
+      position: relative;
+      left: -227px !important;
+    }
+
+    .slider1 img{
+      margin-top: 0px;
     }
 
     .carousel-inner{
-      margin-left: 0px !important;
+      left: 0px !important;
     }
 
     .slider img{
-        margin-top: 165px;
+        top: 2px;
     }
     .slider1{
       height: 127px;
     }
     
     .slider1 .btn{
-      margin-left: -65px;
+      left: -65px;
       width: 543px;
     }
     
     .slider .btn{
-      margin-left: -65px;
+      left: -65px;
     }
 
     
@@ -230,9 +256,6 @@
       display: none;
     }
     
-    .body{
-      overflow-x: hidden;
-    }
   }  
 
   @media screen and (max-width: 500px) {
@@ -249,6 +272,30 @@
         box-shadow: rgba(0, 0, 0, 0.63);
         overflow-x: hidden;
     }
+
+    .carousel-item .active
+       {
+          display: inline-block;
+          position: relative;
+          margin-left: -227px !important;
+       }
+
+       .carousel-inner .d-block,
+       .slider img,
+       .slider1,
+       .col-lg-4,
+       .slider,
+       .slider1 img{
+        display: inline-block !important;
+       }
+
+       .wrapper .top_navbar .top_menu ul{
+        flex-wrap: nowrap !important;
+    }
+  }
+
+  body{
+    scale: fit;
   }
 
   /* Desktop Responsiveness */
@@ -266,12 +313,12 @@
     }
 
     .slider1 .btn{
-      margin-left: 486px;
+      left: 486px;
       
     }
     
     .slider .btn{
-      margin-left: 486px;
+      left: 486px;
     }
     .col-lg-4 .footer-area{
         width: 970px;
@@ -283,11 +330,23 @@
       height: fit-content !important;
        } 
       
-       
       .wrapper .top_navbar {
        width: calc(65.5% - 20px);
       }
        .single-footer-widget pl-5{
         padding-left: 1rem !important;
        }
+
+       img .img1, 
+       img .img2, 
+       img .img3, 
+       img .img4 
+       {
+       margin-top: 10px;
+       }
+       .wrapper .sidebar ul li a.active {
+        margin-left: -10px;
+       }
+
+       
   }
