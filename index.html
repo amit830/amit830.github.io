@@ -6,7 +6,8 @@
   <link rel="icon" type="image/x-png" href="./img/logo.png" height="48px" width="48px">
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.64, shrink-to-fit=yes">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,7 +15,8 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link rel="stylesheet" href="./css/slidebutton.css" <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./css/slidebutton.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Pacifico&display=swap" rel="stylesheet">
 
@@ -59,8 +61,8 @@
     body {
       font-family: 'Quicksand', sans-serif;
       height: auto;
-      width: 100%;
-      display: flex;
+      width: 100vw;
+      display: block;
       position: relative;
     }
 
@@ -300,6 +302,7 @@
       transition: all 0.3s ease;
       padding-bottom: 10%;
       overflow: hidden;
+      z-index: 1;
     }
 
     .wrapper .sidebar ul li a {
@@ -460,9 +463,9 @@ h3{
 *, ::after, ::before {
     box-sizing: border-box;
 }
-user agent stylesheet
+
 section {
-    display: block;
+    display: inline-block !important;
 }
 
 ul {
@@ -648,7 +651,7 @@ a:visited
           </span>
         </span>
         
-      <!--end of slides-->*/
+      <!--end of slides-->
       <script>
       $(".hamburger").click(function(){
         $(".wrapper").toggleClass("collapse");
@@ -696,6 +699,7 @@ a:visited
               <br><a href="https://www.healthline.com/nutrition/12-benefits-of-meditation" target="_blank"><button
                   class="btn" id="btn4">Benefits of Meditation</button></a>
             </div>
+          </span>
 
             <section class="footer-area foot-pd">
               <div class="container-fluid">
